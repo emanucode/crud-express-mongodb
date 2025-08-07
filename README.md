@@ -31,7 +31,7 @@ Este proyecto es una aplicación CRUD (Crear, Leer, Actualizar, Eliminar) desarr
 3.  ```powershell
     cd backend
     npm install
-    npm start
+    npm run dev
     ```
 4.  El servidor se iniciará en el puerto configurado (por defecto 3000).
 
