@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crund | Express & MongoDB</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/index.css" />
+    <!-- Scripts -->
+    <script src="./js/script.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <h1>My Crud con Express + MongoDB</h1>
+      <p>
+        Este es un pequeño proyecto para aprender backend + conexion al
+        frontend.
+      </p>
+    </header>
+    <main>
+      <section class="crud-content">
+        <form id="form-container" class="content">
+          <h2>Crea Una Nueva Tarea</h2>
+
+          <input
+            class="defoul"
+            type="text"
+            required
+            placeholder="Titulo"
+            id="title-tarea"
+          />
+
+          <textarea
+            class="defoul"
+            name=""
+            id="contenido-tarea"
+            placeholder="Contenido de la Tarea"
+          ></textarea>
+
+          <button class="defoul" id="crear">Crear Tarea</button>
+        </form>
+        <div class="mostrar content">
+          <h2>TAREAS 📑</h2>
+          <div id="mostrarTareas"></div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

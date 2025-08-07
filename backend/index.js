@@ -7,7 +7,7 @@ import "./src/config/bd.js";
 
 const app = express();
 
-app.use("/user", userRoutes);
+app.use("/date", userRoutes);
 
 try {
   const PORT = process.env.PORT || 3000;

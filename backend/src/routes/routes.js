@@ -1,12 +1,21 @@
 import express from "express";
-import userContoller from "../controllers/controller.js";
 
 const route = express.Router();
 
-route.post("/", userContoller.create);
-route.get("/", userContoller.getAll);
-route.get("/:id", userContoller.getOne);
-route.put("/:id", userContoller.update);
-route.delete("/:id", userContoller.delite);
+route.post("/", (req, res) => {
+  res.send("<h1>Index</h1>");
+});
+route.get("/", (req, res) => {
+  res.send("<h1>Get: Connect</h1>");
+});
+route.get("/:id", (req, res) => {
+  res.send("<h1>Get ID: Connect</h1>");
+});
+route.put("/:id", (req, res) => {
+  res.send("<h1>Put: Connect</h1>");
+});
+route.delete("/:id", (req, res) => {
+  res.send("<h1>Delete: Connect</h1>");
+});
 
 export default route;

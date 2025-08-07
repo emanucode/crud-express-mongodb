@@ -7,12 +7,20 @@ const task = new Schema(
       type: String,
       required: true,
       unique: true,
+      reim: true,
     },
-    description: String,
-    done: Boolean,
+    description: {
+      type: String,
+      required: true,
+    },
+    done: {
+      type: Boolean,
+      default: false,
+    },
   },
   {
     timeseries: true,
+    versionKey: false,
   }
 );
 
